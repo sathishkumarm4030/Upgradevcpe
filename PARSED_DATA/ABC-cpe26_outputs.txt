@@ -8,7 +8,7 @@ versa-flexvnf-20171013-152148-7774a5a-16.1R1-wsm
 ======================================================================================================================================================
 after_upgrade_package_info
 ======================================================================================================================================================
-versa-flexvnf-20171013-152148-7774a5a-16.1R1-wsm
+versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm
 ======================================================================================================================================================
 before_upgrade_interface
 ======================================================================================================================================================
@@ -3154,12 +3154,12 @@ after_upgrade_config_match
 ['set nacm rule-list oper rule rest action deny']
 ['set nacm rule-list oper cmdrule denyshell command shell']
 ['set nacm rule-list oper cmdrule denyshell action deny']
-['set nacm rule-list oper cmdrule denyrbk command rollback']
-['set nacm rule-list oper cmdrule denyrbk action deny']
 ['set nacm rule-list oper cmdrule denysystem command "request system"']
 ['set nacm rule-list oper cmdrule denysystem action deny']
 ['set nacm rule-list oper cmdrule denyclear command "request clear"']
 ['set nacm rule-list oper cmdrule denyclear action deny']
+['set nacm rule-list oper cmdrule denyrbk command rollback']
+['set nacm rule-list oper cmdrule denyrbk action deny']
 ['set nacm rule-list oper cmdrule read_only command *']
 ['set nacm rule-list oper cmdrule read_only access-operations read,exec']
 ['set nacm rule-list oper cmdrule read_only action permit']

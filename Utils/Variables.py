@@ -6,7 +6,7 @@ def get_vd_details():
     passwd = raw_input("Enter Versa Director Password:\n")
     day = raw_input("Enter DAY:\n")
     print "DAY:" + day
-    # ip = '10.91.127.195'
+    # ip = '10.91.127.194'
     # user = 'MSK'
     # passwd = 'Versa@123'
     # day = '2'

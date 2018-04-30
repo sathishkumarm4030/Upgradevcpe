@@ -76,7 +76,7 @@ def cpe_upgrade():
     pl = read_excel_sheet(cpe_details, 'Sheet1')
     pl = pl.loc[pl['day'] == int(day)]
     report = []
-    for i in range(len(pl.ix[:])):
+    for i, rows in pl.iterrows():
         netconnect = make_connection(vd_ssh_dict)
         dev_dict = {
             "device_type": pl.ix[i, 'type'], "ip": pl.ix[i, 'ip'], \
@@ -87,6 +87,8 @@ def cpe_upgrade():
         check_status = check_device_status(netconnect, cpe_name)
         if check_status != "PASS":
             print check_status
+            cpe_result = [cpe_name, check_status]
+            report.append(cpe_result)
             continue
         else:
             print cpe_name + " is in sync with VD & able to ping & connect"
@@ -133,6 +135,8 @@ def cpe_upgrade():
         check_status = check_device_status(netconnect, cpe_name)
         if check_status != "PASS":
             print check_status
+            cpe_result = [cpe_name, "After Upgrade, " + check_status]
+            report.append(cpe_result)
             continue
         else:
             print "After upgrade " + cpe_name + " is in sync with VD & able to ping & connect"

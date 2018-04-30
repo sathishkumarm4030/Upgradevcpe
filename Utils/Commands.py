@@ -90,11 +90,11 @@ def check_device_status(nc, device_name):
                     else:
                         return "CPE out-of sync."
                 else:
-                    return "Request sync failed."
+                    return "VD --> CPE Request sync failed."
         else:
-            return "Request connect failed."
+            return "VD --> CPE Request connect failed."
     else:
-        return "Request ping failed."
+        return "VD --> CPE Request ping failed."
 
 
 def remove_last_line_from_string(s):
@@ -230,7 +230,7 @@ def rest_operation(vd, user, passwd, json_data):
     percent_completed = 0
     while percent_completed < 100:
         response1 = requests.get(vd + task_url + taskid,
-                                 auth=('MSK', 'Versa@123'),
+                                 auth=(user, passwd),
                                  headers=headers2,
                                  verify=False)
         data1 = response1.json()
