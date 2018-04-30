@@ -1,0 +1,76 @@
+admin@ABC-cpe26-cli> show bgp neighbor brief | nomr
+                                               ^
+% Invalid input detected at '^' marker.
+admin@ABC-cpe26-cli> show bgp neighbor brief | nomore
+routing-instance: ABC-Control-VR
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+10.12.64.1      4  937471    934666     1d13h05m   43            13      65505
+10.12.64.2      4  963530    961440     1d13h05m   31            13      65505
+
+routing-instance: INT-WAN-Transport-VR
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.3     4  95414     96511      4w0d18h    1             10      65507
+169.254.0.5     4  95385     96587      4w0d18h    1             10      65507
+169.254.0.7     4  95430     96513      4w0d18h    1             10      65507
+169.254.0.9     4  95419     96500      4w0d18h    1             10      65507
+169.254.0.11    4  95457     96535      4w0d18h    1             10      65507
+169.254.0.13    4  95393     96498      4w0d18h    1             10      65507
+169.254.0.15    4  95407     96534      4w0d18h    1             10      65507
+169.254.0.17    4  95396     96550      4w0d18h    1             10      65507
+169.254.0.19    4  95445     96494      4w0d18h    1             10      65507
+169.254.0.21    4  95392     96543      4w0d18h    1             10      65507
+
+routing-instance: LAN1-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.2     4  96511     95414      4w0d18h    1             1       65506
+
+routing-instance: LAN2-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.4     4  96587     95385      4w0d18h    1             1       65506
+
+routing-instance: LAN3-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.6     4  96513     95431      4w0d18h    1             1       65506
+
+routing-instance: LAN4-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.8     4  96500     95419      4w0d18h    1             1       65506
+
+routing-instance: LAN5-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.10    4  96535     95457      4w0d18h    1             1       65506
+
+routing-instance: LAN6-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.12    4  96498     95393      4w0d18h    1             1       65506
+
+routing-instance: LAN7-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.14    4  96534     95407      4w0d18h    1             1       65506
+
+routing-instance: LAN8-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.16    4  96550     95396      4w0d18h    1             1       65506
+
+routing-instance: LAN9-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.18    4  96494     95445      4w0d18h    1             1       65506
+
+routing-instance: LAN10-VRF
+
+Neighbor        V  MsgRcvd   MsgSent    Uptime     State/PfxRcd  PfxSent AS
+169.254.0.20    4  96543     95392      4w0d18h    1             1       65506
+
+[ok][2018-04-20 08:01:52]
+admin@ABC-cpe26-cli>

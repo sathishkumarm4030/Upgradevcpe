@@ -1,0 +1,3 @@
+cpe,upgrade,interface,bgp_nbr_match,route_match,config_match
+ABC-cpe26,device already running with same package
+ABC-cpe27,Success - versa-flexvnf-20171013-152148-7774a5a-16.1R1-wsm to versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm,OK,OK,OK,OK

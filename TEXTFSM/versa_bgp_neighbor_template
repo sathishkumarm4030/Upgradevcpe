@@ -1,0 +1,18 @@
+Value Filldown routing_instance (\S+)
+Value Neighbor (\d+\.\d+\.\d+\.\d+)
+#Value Version (\d)
+#Value MsgRcvd (\S+)
+#Value MsgSent (\S+)
+#Value Uptime (\S+)
+#Value State_or_PfxRcd (\S+)
+#Value PfxSent (\S+)
+Value AS (\S+)
+
+
+Start
+  ^routing-instance: ${routing_instance}
+  #^${Neighbor}\s+${Version}\s+${MsgRcvd}\s+${MsgSent}\s+${Uptime}\s+${State_or_PfxRcd}\s+${PfxSent}\s+${AS} -> Record
+  ^${Neighbor}\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+\S+\s+${AS} -> Record
+
+
+EOF

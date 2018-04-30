@@ -1,0 +1,15 @@
+Value PACKAGEID (\S+)
+Value MAJORRELEASE (\d+)
+Value MINORRELEASE (\d+)
+Value DATE (\d+)
+Value PACKAGENAME (\S+)
+Value RELTYPE (\S+)
+Value BUILDTYPE (\S+)
+Value BRANCH (\S+)
+Value Creator (\S+)
+
+
+Start
+  ^${PACKAGEID}\s+${MAJORRELEASE}\s+${MINORRELEASE}\s+${DATE}\s+${PACKAGENAME}\s+${RELTYPE}\s+${BUILDTYPE}\s+${BRANCH}\s+${Creator} -> Record
+
+EOF

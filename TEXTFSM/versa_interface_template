@@ -1,0 +1,15 @@
+Value NAME (\S+)
+Value MAC (\S+)
+Value OPER (up | down)
+Value ADMIN (up | down)
+Value TENANT (\S+)
+Value VRF (\S+)
+Value IP (\S+)
+
+
+Start
+  ^${NAME}\s+${MAC}\s+${OPER}\s+${ADMIN}\s+${TENANT}\s+${VRF}\s+${IP} -> Record
+  ^${NAME}\s+${MAC}\s+${OPER}\s+${ADMIN}\s+${TENANT}\s+${VRF} -> Record
+
+
+EOF

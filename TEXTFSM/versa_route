@@ -1,0 +1,407 @@
+admin connected from 10.91.127.195 using ssh on ABC-cpe26
+admin@ABC-cpe26-cli> show route
+
+Routes for Routing instance : ABC-Control-VR  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +10.5.13.54/32       10.12.64.1      03:40:30 Indirect
+SDWAN  N/A  +10.12.0.1/32        0.0.0.0         4d01h25m Indirect
+SDWAN  N/A  +10.12.0.2/32        0.0.0.0         4d01h25m Indirect
+local  N/A  +10.12.0.116/32      0.0.0.0         4d01h25m directly connected
+SDWAN  N/A  +10.12.0.117/32      0.0.0.0         1d16h08m Indirect
+SDWAN  N/A  +10.12.64.1/32       0.0.0.0         1d16h08m ptvi24
+SDWAN  N/A  +10.12.64.2/32       0.0.0.0         1d16h08m ptvi25
+local  N/A  +10.12.64.116/32     0.0.0.0         4d01h25m directly connected
+SDWAN  N/A  +10.12.64.117/32     0.0.0.0         1d16h08m Indirect
+BGP    N/A  +10.22.64.101/32     10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.22.64.102/32     10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.83.40.6/32       10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.83.44.32/27      10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.83.44.32/27      10.12.64.2      03:40:31 Indirect
+BGP    N/A  +10.83.140.45/32     10.12.64.2      10:04:04 Indirect
+BGP    N/A  +10.83.140.46/32     10.12.64.2      10:04:04 Indirect
+BGP    N/A  +10.91.116.64/26     10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.91.117.0/24      10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.91.124.0/24      10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.91.125.0/24      10.12.64.1      03:40:31 Indirect
+static N/A  +10.91.140.0/22      10.12.64.1      1d16h08m ptvi24
+static N/A   10.91.140.0/22      10.12.64.2      1d16h08m ptvi25
+BGP    N/A  +10.91.140.31/32     10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.91.140.32/29     10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.91.140.40/32     10.12.64.1      03:40:31 Indirect
+BGP    N/A  +10.91.141.60/32     10.12.64.1      03:40:31 Indirect
+Aborted: by user
+[ok][2018-04-20 11:04:48]
+admin@ABC-cpe26-cli> show route | nomore
+
+Routes for Routing instance : ABC-Control-VR  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +10.5.13.54/32       10.12.64.1      03:40:36 Indirect
+SDWAN  N/A  +10.12.0.1/32        0.0.0.0         4d01h25m Indirect
+SDWAN  N/A  +10.12.0.2/32        0.0.0.0         4d01h25m Indirect
+local  N/A  +10.12.0.116/32      0.0.0.0         4d01h25m directly connected
+SDWAN  N/A  +10.12.0.117/32      0.0.0.0         1d16h08m Indirect
+SDWAN  N/A  +10.12.64.1/32       0.0.0.0         1d16h08m ptvi24
+SDWAN  N/A  +10.12.64.2/32       0.0.0.0         1d16h08m ptvi25
+local  N/A  +10.12.64.116/32     0.0.0.0         4d01h25m directly connected
+SDWAN  N/A  +10.12.64.117/32     0.0.0.0         1d16h08m Indirect
+BGP    N/A  +10.22.64.101/32     10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.22.64.102/32     10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.83.40.6/32       10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.83.44.32/27      10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.83.44.32/27      10.12.64.2      03:40:36 Indirect
+BGP    N/A  +10.83.140.45/32     10.12.64.2      10:04:09 Indirect
+BGP    N/A  +10.83.140.46/32     10.12.64.2      10:04:09 Indirect
+BGP    N/A  +10.91.116.64/26     10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.91.117.0/24      10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.91.124.0/24      10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.91.125.0/24      10.12.64.1      03:40:36 Indirect
+static N/A  +10.91.140.0/22      10.12.64.1      1d16h08m ptvi24
+static N/A   10.91.140.0/22      10.12.64.2      1d16h08m ptvi25
+BGP    N/A  +10.91.140.31/32     10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.91.140.32/29     10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.91.140.40/32     10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.91.141.60/32     10.12.64.1      03:40:36 Indirect
+BGP    N/A  +10.91.142.0/24      10.12.64.1      03:40:36 Indirect
+BGP    N/A   10.92.116.64/27     10.12.64.1      03:40:36 Indirect
+static N/A  +10.92.116.64/27     10.12.64.1      1d16h08m ptvi24
+static N/A   10.92.116.64/27     10.12.64.2      1d16h08m ptvi25
+SDWAN  N/A  +30.12.1.1/32        0.0.0.0         1d16h08m Indirect
+SDWAN  N/A  +30.12.1.2/32        0.0.0.0         1d16h08m Indirect
+SDWAN  N/A  +30.12.2.1/32        0.0.0.0         1d16h08m Indirect
+SDWAN  N/A  +30.12.2.2/32        0.0.0.0         1d16h08m Indirect
+
+
+Routes for Routing instance : ABC-Control-VR  AFI: ipv6
+
+
+Routes for Routing instance : INT-WAN-Transport-VR  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+static N/A  +0.0.0.0/0           172.16.3.97     5w6d21h  Indirect
+conn   N/A  +169.254.0.2/31      0.0.0.0         4d01h25m tvi-0/602.0
+local  N/A  +169.254.0.2/32      0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.4/31      0.0.0.0         4d01h25m tvi-0/604.0
+local  N/A  +169.254.0.4/32      0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.6/31      0.0.0.0         4d01h25m tvi-0/606.0
+local  N/A  +169.254.0.6/32      0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.8/31      0.0.0.0         4d01h25m tvi-0/608.0
+local  N/A  +169.254.0.8/32      0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.10/31     0.0.0.0         4d01h25m tvi-0/610.0
+local  N/A  +169.254.0.10/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.12/31     0.0.0.0         4d01h25m tvi-0/612.0
+local  N/A  +169.254.0.12/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.14/31     0.0.0.0         4d01h25m tvi-0/614.0
+local  N/A  +169.254.0.14/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.16/31     0.0.0.0         4d01h25m tvi-0/616.0
+local  N/A  +169.254.0.16/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.18/31     0.0.0.0         4d01h25m tvi-0/618.0
+local  N/A  +169.254.0.18/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +169.254.0.20/31     0.0.0.0         4d01h25m tvi-0/620.0
+local  N/A  +169.254.0.20/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +172.16.3.96/30      0.0.0.0         5w6d21h  vni-0/2.0
+local  N/A  +172.16.3.98/32      0.0.0.0         5w6d21h  directly connected
+BGP    N/A  +192.12.11.0/24      169.254.0.3     03:46:42 Indirect
+BGP    N/A  +192.12.12.0/24      169.254.0.5     03:46:42 Indirect
+BGP    N/A  +192.12.13.0/24      169.254.0.7     03:46:42 Indirect
+BGP    N/A  +192.12.14.0/24      169.254.0.9     03:46:42 Indirect
+BGP    N/A  +192.12.15.0/24      169.254.0.11    03:46:42 Indirect
+BGP    N/A  +192.12.16.0/24      169.254.0.13    03:46:42 Indirect
+BGP    N/A  +192.12.17.0/24      169.254.0.15    03:46:42 Indirect
+BGP    N/A  +192.12.18.0/24      169.254.0.17    03:46:42 Indirect
+BGP    N/A  +192.12.19.0/24      169.254.0.19    03:46:42 Indirect
+BGP    N/A  +192.12.20.0/24      169.254.0.21    03:46:42 Indirect
+
+
+Routes for Routing instance : INT-WAN-Transport-VR  AFI: ipv6
+
+
+Routes for Routing instance : LAN1-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.2     5w6d21h  Indirect
+BGP    N/A  +10.63.47.64/30      30.12.1.2       1d16h08m Indirect
+conn   N/A  +169.254.0.2/31      0.0.0.0         4d01h25m tvi-0/603.0
+local  N/A  +169.254.0.3/32      0.0.0.0         4d01h25m directly connected
+BGP    N/A   192.12.11.0/24      30.12.1.2       03:46:42 Indirect
+conn   N/A  +192.12.11.0/24      0.0.0.0         03:46:42 vni-0/4.11
+local  N/A  +192.12.11.1/32      0.0.0.0         03:46:42 directly connected
+BGP    N/A  +192.12.21.0/24      10.12.64.117    03:46:35 Indirect
+BGP    N/A   192.12.21.0/24      30.12.1.2       03:46:34 Indirect
+BGP    N/A  +192.168.101.100/30  30.12.1.2       1d16h08m Indirect
+BGP    N/A  +192.168.102.100/30  30.12.2.2       1d16h08m Indirect
+
+
+Routes for Routing instance : LAN1-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN10-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.20    5w6d21h  Indirect
+conn   N/A  +169.254.0.20/31     0.0.0.0         4d01h25m tvi-0/621.0
+local  N/A  +169.254.0.21/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.20.0/24      0.0.0.0         03:46:42 vni-0/4.20
+local  N/A  +192.12.20.1/32      0.0.0.0         03:46:42 directly connected
+BGP    N/A  +192.12.30.0/24      10.12.64.117    03:46:35 Indirect
+
+
+Routes for Routing instance : LAN10-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN2-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.4     5w6d21h  Indirect
+conn   N/A  +169.254.0.4/31      0.0.0.0         4d01h25m tvi-0/605.0
+local  N/A  +169.254.0.5/32      0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.12.0/24      0.0.0.0         03:46:43 vni-0/4.12
+local  N/A  +192.12.12.1/32      0.0.0.0         03:46:43 directly connected
+BGP    N/A  +192.12.22.0/24      10.12.64.117    03:46:36 Indirect
+
+
+Routes for Routing instance : LAN2-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN3-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.6     5w6d21h  Indirect
+conn   N/A  +169.254.0.6/31      0.0.0.0         4d01h25m tvi-0/607.0
+local  N/A  +169.254.0.7/32      0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.13.0/24      0.0.0.0         03:46:43 vni-0/4.13
+local  N/A  +192.12.13.1/32      0.0.0.0         03:46:43 directly connected
+BGP    N/A  +192.12.23.0/24      10.12.64.117    03:46:36 Indirect
+
+
+Routes for Routing instance : LAN3-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN4-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.8     5w6d21h  Indirect
+conn   N/A  +169.254.0.8/31      0.0.0.0         4d01h25m tvi-0/609.0
+local  N/A  +169.254.0.9/32      0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.14.0/24      0.0.0.0         03:46:43 vni-0/4.14
+local  N/A  +192.12.14.1/32      0.0.0.0         03:46:43 directly connected
+BGP    N/A  +192.12.24.0/24      10.12.64.117    03:46:36 Indirect
+
+
+Routes for Routing instance : LAN4-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN5-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.10    5w6d21h  Indirect
+conn   N/A  +169.254.0.10/31     0.0.0.0         4d01h25m tvi-0/611.0
+local  N/A  +169.254.0.11/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.15.0/24      0.0.0.0         03:46:43 vni-0/4.15
+local  N/A  +192.12.15.1/32      0.0.0.0         03:46:43 directly connected
+BGP    N/A  +192.12.25.0/24      10.12.64.117    03:46:36 Indirect
+
+
+Routes for Routing instance : LAN5-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN6-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.12    5w6d21h  Indirect
+conn   N/A  +169.254.0.12/31     0.0.0.0         4d01h25m tvi-0/613.0
+local  N/A  +169.254.0.13/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.16.0/24      0.0.0.0         03:46:43 vni-0/4.16
+local  N/A  +192.12.16.1/32      0.0.0.0         03:46:43 directly connected
+BGP    N/A  +192.12.26.0/24      10.12.64.117    03:46:36 Indirect
+
+
+Routes for Routing instance : LAN6-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN7-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.14    5w6d21h  Indirect
+conn   N/A  +169.254.0.14/31     0.0.0.0         4d01h25m tvi-0/615.0
+local  N/A  +169.254.0.15/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.17.0/24      0.0.0.0         03:46:44 vni-0/4.17
+local  N/A  +192.12.17.1/32      0.0.0.0         03:46:44 directly connected
+BGP    N/A  +192.12.27.0/24      10.12.64.117    03:46:37 Indirect
+
+
+Routes for Routing instance : LAN7-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN8-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.16    5w6d21h  Indirect
+conn   N/A  +169.254.0.16/31     0.0.0.0         4d01h25m tvi-0/617.0
+local  N/A  +169.254.0.17/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.18.0/24      0.0.0.0         03:46:44 vni-0/4.18
+local  N/A  +192.12.18.1/32      0.0.0.0         03:46:44 directly connected
+BGP    N/A  +192.12.28.0/24      10.12.64.117    03:46:37 Indirect
+
+
+Routes for Routing instance : LAN8-VRF  AFI: ipv6
+
+
+Routes for Routing instance : LAN9-VRF  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+BGP    N/A  +0.0.0.0/0           169.254.0.18    5w6d21h  Indirect
+conn   N/A  +169.254.0.18/31     0.0.0.0         4d01h25m tvi-0/619.0
+local  N/A  +169.254.0.19/32     0.0.0.0         4d01h25m directly connected
+conn   N/A  +192.12.19.0/24      0.0.0.0         03:46:44 vni-0/4.19
+local  N/A  +192.12.19.1/32      0.0.0.0         03:46:44 directly connected
+BGP    N/A  +192.12.29.0/24      10.12.64.117    03:46:37 Indirect
+
+
+Routes for Routing instance : LAN9-VRF  AFI: ipv6
+
+
+Routes for Routing instance : MPLS-WAN-Transport-VR  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+static N/A  +0.0.0.0/0           172.16.3.93     5w6d21h  Indirect
+conn   N/A  +172.16.3.92/30      0.0.0.0         5w6d21h  vni-0/1.0
+local  N/A  +172.16.3.94/32      0.0.0.0         5w6d21h  directly connected
+
+
+Routes for Routing instance : MPLS-WAN-Transport-VR  AFI: ipv6
+
+
+Routes for Routing instance : global  AFI: ipv4
+
+Codes: E1 - OSPF external type 1, E2 - OSPF external type 2
+IA - inter area, iA - intra area,
+L1 - IS-IS level-1, L2 - IS-IS level-2
+N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+RTI - Learnt from another routing-instance
++ - Active Route
+
+Prot   Type  Dest Address/Mask   Next-hop        Age      Interface name
+----   ----  -----------------   --------        ---      --------------
+local  N/A  +10.12.64.116/32     0.0.0.0         4d01h25m directly connected
+SDWAN  N/A  +10.92.116.67/32     0.0.0.0         4d01h25m Indirect
+SDWAN  N/A  +10.92.116.68/32     0.0.0.0         4d01h25m Indirect
+
+
+Routes for Routing instance : global  AFI: ipv6
+
+[ok][2018-04-20 11:04:56]
+admin@ABC-cpe26-cli>

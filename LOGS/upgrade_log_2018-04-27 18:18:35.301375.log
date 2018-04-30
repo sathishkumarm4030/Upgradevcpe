@@ -1,0 +1,5 @@
+2018-04-27 18:18:35,306 - root - INFO - SCRIPT Started
+2018-04-27 18:18:35,341 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-04-27 18:18:35,474 - paramiko.transport - INFO - Authentication (password) successful!
+2018-04-27 18:19:40,956 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-04-27 18:19:41,084 - paramiko.transport - INFO - Authentication (password) successful!

@@ -1,0 +1,7 @@
+Value CONFIG (set.*)
+
+
+Start
+  ^${CONFIG} -> Record
+
+EOF

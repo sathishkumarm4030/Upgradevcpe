@@ -1,0 +1,8 @@
+  partitions   - Display Disk space statistics
+admin@ABC-cpe26-cli> show system package-info | tab
+PACKAGE                                                                                     BUILD
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                      RELTYPE  TYPE   BRANCH    CREATOR
+----------------------------------------------------------------------------------------------------------------------
+e51d9e9  16     1      20171107  versa-flexvnf-20171107-024119-e51d9e9-16.1R1-wsm  R1       S3.3   16.1R1S3  jenkins
+
+[ok][2018-04-23 07:05:13]

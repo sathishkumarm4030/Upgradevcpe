@@ -1,0 +1,13 @@
+2018-04-27 18:39:44,260 - root - INFO - SCRIPT Started
+2018-04-27 18:39:44,323 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-04-27 18:39:44,454 - paramiko.transport - INFO - Authentication (password) successful!
+2018-04-27 18:40:49,948 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-04-27 18:40:50,079 - paramiko.transport - INFO - Authentication (password) successful!
+2018-04-27 18:50:22,664 - root - INFO - Upgrade REST REQUEST : COMPLETED
+2018-04-27 18:50:22,685 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2018-04-27 18:50:22,838 - paramiko.transport - INFO - Authentication (password) successful!
+2018-04-27 18:52:02,189 - root - INFO - ABC-cpe27 package is matched after upgrade
+2018-04-27 18:52:02,189 - root - INFO - ABC-cpe27  interface  is matched after upgrade
+2018-04-27 18:52:02,190 - root - INFO - ABC-cpe27  bgp  is matched after upgrade
+2018-04-27 18:52:02,190 - root - INFO - ABC-cpe27  route  is matched after upgrade
+2018-04-27 18:52:02,262 - root - INFO - ABC-cpe27  running-config  is matched after upgrade

@@ -1,0 +1,17 @@
+Value Filldown routing_instance (\S+)
+Value Prot (\S+)
+Value Type (N/A)
+Value DestAddress (\S+)
+Value Mask (\S+)
+Value Nexthop (\S+)
+#Value Age (\S+)
+Value Interfacename (\S+\s*\S*)
+
+
+Start
+  ^Routes for Routing instance : ${routing_instance}
+  #^${Prot}\s+${Type}\s+${DestAddress}/${Mask}\s+${Nexthop}\s+${Age}\s+${Interfacename} -> Record
+  ^${Prot}\s+${Type}\s+${DestAddress}/${Mask}\s+${Nexthop}\s+\S+\s+${Interfacename} -> Record
+
+
+EOF
