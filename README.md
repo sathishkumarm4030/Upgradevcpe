@@ -12,11 +12,17 @@ install below packages
 2) cd netmiko & run "python setup.py install"
 
 step2: Update upgrade_device_list.xlsx for your devices
+
 step3: run DoCpeUpgrade.py
 
+
 after script run:
+
 RESULT stored in RESULT.csv
+
 device cmd output stored in PARSED_DATA FOLDER
+
 SCRIPT LOGS stored in LOGS
+
 
 
