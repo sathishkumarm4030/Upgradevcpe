@@ -4,7 +4,7 @@ This Tool is designed for upgrading Versa CPE.
 
 __author__ = "Sathishkumar murugesan"
 __copyright__ = "Copyright(c) 2018 Colt Technologies india pvt ltd."
-__credits__ = ["Danny Pinto", "Anoop Jhon", "Pravin Karunakaran"]
+__credits__ = ["Danny Pinto"]
 __license__ = "GPL"
 __version__ = "1.0.1"
 __maintainer__ = "Sathishkumar Murugesan"
@@ -21,6 +21,8 @@ from netmiko import redispatch
 import errno
 import csv
 import os
+import urllib3
+
 
 LOGFILE = "LOGS/upgrade_log_" + str(datetime.now()) + ".log"
 logger = logging.getLogger("")
@@ -30,6 +32,7 @@ formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
+urllib3.disable_warnings()
 
 fileDir = os.path.dirname(os.path.realpath('__file__'))
 cpe_details = os.path.join(fileDir, 'upgrade_device_list.xlsx')
@@ -76,6 +79,9 @@ def cpe_upgrade():
     pl = read_excel_sheet(cpe_details, 'Sheet1')
     pl = pl.loc[pl['day'] == int(day)]
     report = []
+    if len(pl) == 0:
+        print "\n\n\t\tENTER DAY is not matched for any cpe upgrade\n\n"
+        return
     for i, rows in pl.iterrows():
         netconnect = make_connection(vd_ssh_dict)
         dev_dict = {
@@ -108,8 +114,11 @@ def cpe_upgrade():
             print "check reachabilty to " + dev_dict["ip"]
             continue
         netconnect.write_channel("cli\n")
+        output1 = netconnect.read_channel()
+        print output1
         time.sleep(2)
         redispatch(netconnect, device_type='versa')
+        time.sleep(2)
         parse1 = parse_send_command(netconnect, cmd1, interface_template)
         parse2 = parse_send_command(netconnect, cmd2, bgp_nbr_template)
         parse3 = parse_send_command(netconnect, cmd3, route_template)
@@ -157,6 +166,9 @@ def cpe_upgrade():
             print "check reachabilty to " + dev_dict["ip"]
             continue
         netconnect.write_channel("cli\n")
+        output1 = netconnect.read_channel()
+        print output1
+        time.sleep(2)
         redispatch(netconnect, device_type='versa')
         time.sleep(2)
         parse5 = parse_send_command(netconnect, cmd1, interface_template)
@@ -179,7 +191,7 @@ def cpe_upgrade():
         cpe_parsed_data = [[cpe_name], [pack_info['PACKAGE_NAME']], [pack_info_after_upgrade['PACKAGE_NAME']], parse1, parse5, parse2, parse6, parse3, parse7, parse4, parse8]
         report.append(cpe_result)
         write_output(cpe_parsed_data)
-    close_connection(netconnect)
+    # close_connection(netconnect)
     write_result(report)
 
 
